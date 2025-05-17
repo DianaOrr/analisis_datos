@@ -18,8 +18,8 @@ HEADERS = {
 }
 
 # DATE CONFIGURATION
-end = datetime.utcnow()
-start = end - timedelta(days=2)  
+end = datetime.utcnow() #UTC NOW en desuso
+start = end - timedelta(days=2)
 
 # GENERAL FUNCTION TO QUERY HOURLY INDICATORS
 def get_esios_data(indicator_id, start_date, end_date):
